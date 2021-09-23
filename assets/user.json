@@ -1,0 +1,114 @@
+{
+    "managers": [
+        {
+            "id": 1,
+            "username": "manager1",
+            "role": "secundary_manager",
+            "name": "Pedro Pablo"
+        },
+        {
+            "id": 2,
+            "username": "manager2",
+            "role": "secundary_manager",
+            "name": "Pedro Luis"
+        },
+        {
+            "id": 3,
+            "username": "manager3",
+            "role": "secundary_manager",
+            "name": "Luis Pablo"
+        },
+        {
+            "id": 4,
+            "username": "manager4",
+            "role": "secundary_manager",
+            "name": "Julio Pablo"
+        }
+    ],
+    "users": [
+        {
+            "id": 5,
+            "username": "user1",
+            "role": "user",
+             "name": "María López"
+        },
+         {
+            "id": 6,
+            "username": "user2",
+            "role": "user",
+            "name": "María María"
+        },
+         {
+            "id": 7,
+            "username": "user3",
+            "role": "user",
+            "name": "María Laura"
+        },
+         {
+            "id": 8,
+            "username": "user4",
+            "role": "user",
+            "name": "Clara R"
+        },
+        {
+            "id": 9,
+            "username": "user5",
+            "role": "user",
+            "name": "Clara María"
+        },
+        {
+            "id": 10,
+            "username": "user6",
+            "role": "user",
+            "name": "Martha Rodriguez"
+        },
+        {
+            "id": 11,
+            "username": "user7",
+            "role": "user",
+            "name": "Luis A"
+        },
+        {
+            "id": 12,
+            "username": "user8",
+            "role": "user",
+            "name": "Jose Luis"
+        },
+        {
+            "id": 13,
+            "username": "user9",
+            "role": "user",
+            "name": "Jorge Luis"
+        },
+        {
+            "id": 14,
+            "username": "user10",
+            "role": "user",
+            "name": "Carlos A"
+        },
+        {
+            "id": 15,
+            "username": "user11",
+            "role": "user",
+            "name": "Daniel E"
+        },
+        {
+            "id": 16,
+            "username": "user12",
+            "role": "user",
+            "name": "Camilo P"
+        },
+        {
+            "id": 17,
+            "username": "user13",
+            "role": "user",
+            "name": "Raul P"
+        },
+        {
+            "id": 18,
+            "username": "user14",
+            "role": "user",
+            "name": "Luis P"
+        }
+    ]
+}
