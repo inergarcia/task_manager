@@ -22,4 +22,15 @@ class AppStrings {
   static const String selectTask = "Select a Task";
   static const String startTask = "START TASK";
   static const String endTask = "END TASK";
+  static const String taskDetails = 'Task Details';
+  static const String title = 'TITLE';
+  static const String author = 'AUTHOR';
+  static const String date = 'DATE';
+  static const String description = 'DESCRIPTION';
+  static const String type = 'TYPE';
+  static const String project = 'PROJECT';
+  static const String status = 'STATUS';
+  static const String responsable = 'RESPONSABLE';
+  static const String programmers = 'PROGRAMMERS';
+  static const String noYetAssig = 'Not yet assigned';
 }

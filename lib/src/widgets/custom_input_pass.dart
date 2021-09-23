@@ -45,7 +45,6 @@ class _CustomInputPassState extends State<CustomInputPass> {
         controller: widget.textController,
         cursorColor: AppColors.primaryColor,
         style: const TextStyle(
-          fontWeight: FontWeight.w500,
           color: AppColors.inputFontColor,
         ),
         autocorrect: false,
