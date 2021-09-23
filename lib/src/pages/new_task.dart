@@ -89,7 +89,7 @@ class _NewTaskPageState extends State<NewTaskPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const SizedBox(
-                  height: 15,
+                  height: 20,
                 ),
                 CustomInput(
                   textController: title,
@@ -158,7 +158,7 @@ class _NewTaskPageState extends State<NewTaskPage> {
           description: description.text,
           project: project!,
           responsable: taskProvider.selectedResponsable!,
-          state: "New",
+          status: "New",
           title: title.text,
           type: type!,
           users: [],

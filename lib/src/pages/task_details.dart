@@ -100,13 +100,13 @@ class TaskDetailsPage extends StatelessWidget {
             ],
           ),
           SettingTitle(
-            text: 'STATE',
+            text: 'STATUS',
             items: [
               ListTile(
                 minLeadingWidth: 0,
                 tileColor: Colors.white,
                 title: Text(
-                  taskProvider.selectedTask!.state,
+                  taskProvider.selectedTask!.status,
                 ),
               ),
             ],

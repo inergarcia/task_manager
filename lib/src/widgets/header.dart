@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:task_manager/src/design/colors.dart';
+import 'package:task_manager/src/design/dimensions.dart';
 
 class CustomHeader extends StatelessWidget {
   final String title;
@@ -19,7 +20,7 @@ class CustomHeader extends StatelessWidget {
         color: AppColors.primaryColor,
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(
-            30,
+            AppDimensions.borderRadius * 2,
           ),
         ),
       ),

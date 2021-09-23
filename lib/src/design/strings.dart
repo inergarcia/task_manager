@@ -16,4 +16,10 @@ class AppStrings {
   static const String titleNewTask = "New Task";
   static const String titleAccount = "Account";
   static const String titleActionTask = 'Action Task';
+  static const String user = "USER";
+  static const String logout = "LOGOUT";
+  static const String closeSectionAnsw = "Do you want to close the section?";
+  static const String selectTask = "Select a Task";
+  static const String startTask = "START TASK";
+  static const String endTask = "END TASK";
 }

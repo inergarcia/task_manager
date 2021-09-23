@@ -37,6 +37,7 @@ class _DashBoardPageProgrammerState extends State<DashBoardPageProgrammer> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: CircleAvatar(
+              backgroundColor: AppColors.circleAvatarColor,
               child: Text(
                 authProvider.user != null
                     ? authProvider.user!.name.substring(0, 2)

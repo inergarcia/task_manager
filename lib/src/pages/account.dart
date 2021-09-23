@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'package:task_manager/src/design/colors.dart';
+import 'package:task_manager/src/design/strings.dart';
 import 'package:task_manager/src/helpers/custom_dialogs.dart';
 import 'package:task_manager/src/providers/auth.dart';
 import 'package:task_manager/src/providers/navigator_index.dart';
@@ -29,7 +30,7 @@ class _AccountPageState extends State<AccountPage> {
               physics: const BouncingScrollPhysics(),
               children: [
                 SettingTitle(
-                  text: 'USER',
+                  text: AppStrings.user,
                   items: [
                     ListTile(
                       minLeadingWidth: 0,
@@ -52,7 +53,7 @@ class _AccountPageState extends State<AccountPage> {
                       title: Text(authProvider.user!.username),
                     ),
                     SettingItem(
-                      text: "LOGOUT",
+                      text: AppStrings.logout,
                       icon: Icons.arrow_forward_ios_outlined,
                       onPress: () =>
                           _logout(context, authProvider, navigatorIndex),
@@ -68,8 +69,8 @@ class _AccountPageState extends State<AccountPage> {
   void _logout(BuildContext context, AuthProvider authProvider,
       NavigatorIndex navigatorIndex) {
     CustomDialogs.showAlertDialogWihtCancel(
-      title: "LOGOUT",
-      msg: "Do you want to close the section?",
+      title: AppStrings.logout,
+      msg: AppStrings.closeSectionAnsw,
       context: context,
       onPress: () async {
         Navigator.pop(context);

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 
 import 'package:task_manager/src/design/colors.dart';
+import 'package:task_manager/src/design/dimensions.dart';
 import 'package:task_manager/src/helpers/date.dart';
 
 class CustomInputDate extends StatefulWidget {
@@ -28,15 +29,16 @@ class _CustomInputDateState extends State<CustomInputDate> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 50,
       padding: const EdgeInsets.only(
         bottom: 2.5,
         top: 2.5,
         left: 20,
       ),
-      margin: const EdgeInsets.only(bottom: 20),
+      margin: const EdgeInsets.only(bottom: AppDimensions.marginBottom),
       decoration: BoxDecoration(
         color: AppColors.imputTextBackgroundColor,
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(AppDimensions.borderRadius),
         boxShadow: <BoxShadow>[
           BoxShadow(
             color: Colors.black.withOpacity(0.09),

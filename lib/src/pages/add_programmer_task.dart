@@ -106,8 +106,8 @@ class _AddProgrammerTaskPageState extends State<AddProgrammerTaskPage> {
       AuthProvider authProvider) async {
     if (taskProvider.selectedTask != null) {
       Task task = taskProvider.selectedTask!;
-      if (task.state == 'New') {
-        task.state = 'Open';
+      if (task.status == 'New') {
+        task.status = 'Open';
       }
       task.users = [];
       for (int i = 0; i < isCheck.length; i++) {

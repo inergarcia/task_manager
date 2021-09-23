@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:task_manager/src/design/colors.dart';
+import 'package:task_manager/src/design/dimensions.dart';
 
 class CustomInput extends StatefulWidget {
   final String placeholder;
@@ -40,10 +41,10 @@ class _CustomInputState extends State<CustomInput> {
     return Container(
       height: widget.maxLines != 1 ? null : 50,
       padding: const EdgeInsets.only(bottom: 2.5, top: 2.5, left: 20),
-      margin: const EdgeInsets.only(bottom: 20),
+      margin: const EdgeInsets.only(bottom: AppDimensions.marginBottom),
       decoration: BoxDecoration(
         color: AppColors.imputTextBackgroundColor,
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(AppDimensions.borderRadius),
         boxShadow: <BoxShadow>[
           BoxShadow(
             color: Colors.black.withOpacity(0.09),

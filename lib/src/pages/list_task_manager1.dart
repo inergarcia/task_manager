@@ -55,7 +55,7 @@ class ListTaskManager1 extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Text(taskProvider.task[index].state),
+                  Text(taskProvider.task[index].status),
                   const SizedBox(
                     width: 5,
                   ),

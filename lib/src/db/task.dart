@@ -20,7 +20,7 @@ class TaskDB {
               responsable TEXT,
               author TEXT,
               project TEXT,
-              state TEXT,
+              status TEXT,
               users TEXT
             ) """);
       },

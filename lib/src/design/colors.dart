@@ -7,4 +7,5 @@ class AppColors {
   static const Color buttonBackgorundColor = primaryColor;
   static const Color inputFontColor = Colors.black;
   static const Color placeholderColor = Colors.grey;
+  static const Color circleAvatarColor = Colors.blueGrey;
 }

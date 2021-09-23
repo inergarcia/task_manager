@@ -58,12 +58,12 @@ class _ActionTaskPageState extends State<ActionTaskPage> {
                 physics: const BouncingScrollPhysics(),
                 children: [
                   CustomSelectTask(
-                    title: 'Select a Task',
+                    title: AppStrings.selectTask,
                     onChange: () {},
                   ),
                   if (taskProvider.selectedTask != null)
                     Text(
-                      "Your task status is ${taskProvider.selectedTask!.state}",
+                      "Your task status is ${taskProvider.selectedTask!.status}",
                       style: TextStyle(
                         color: Colors.grey[700],
                         fontSize: 18,
@@ -74,7 +74,7 @@ class _ActionTaskPageState extends State<ActionTaskPage> {
                   ),
                   ButtonFill(
                     color: AppColors.primaryColor,
-                    text: 'START TASK',
+                    text: AppStrings.startTask,
                     onPress: () => setStatus(
                       status: "In process",
                       taskProvider: taskProvider,
@@ -87,7 +87,7 @@ class _ActionTaskPageState extends State<ActionTaskPage> {
                   ),
                   ButtonFill(
                     color: AppColors.primaryColor,
-                    text: 'END TASK',
+                    text: AppStrings.endTask,
                     onPress: () => setStatus(
                       status: "Close",
                       taskProvider: taskProvider,
@@ -109,7 +109,7 @@ class _ActionTaskPageState extends State<ActionTaskPage> {
     required AuthProvider authProvider,
   }) async {
     if (taskProvider.selectedTask != null) {
-      if (taskProvider.selectedTask!.state == status) {
+      if (taskProvider.selectedTask!.status == status) {
         CustomSnackBar.showSnakBar(
           context: context,
           msg: 'Your task has that status!',
@@ -117,7 +117,7 @@ class _ActionTaskPageState extends State<ActionTaskPage> {
         );
       } else {
         Task newTask = taskProvider.selectedTask!;
-        newTask.state = status;
+        newTask.status = status;
         bool res = await TaskDB.update(newTask);
         if (res == true) {
           taskProvider.selectedTask = null;
