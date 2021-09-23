@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'package:task_manager/src/design/colors.dart';
+import 'package:task_manager/src/design/strings.dart';
 import 'package:task_manager/src/helpers/date.dart';
 import 'package:task_manager/src/providers/task.dart';
 import 'package:task_manager/src/widgets/setting_title.dart';
@@ -16,7 +17,7 @@ class TaskDetailsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        title: const Text('Task Details'),
+        title: const Text(AppStrings.taskDetails),
         leading: IconButton(
           onPressed: () async {
             Navigator.pop(context);
@@ -32,7 +33,7 @@ class TaskDetailsPage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         children: [
           SettingTitle(
-            text: 'TITLE',
+            text: AppStrings.title,
             items: [
               ListTile(
                 minLeadingWidth: 0,
@@ -42,7 +43,7 @@ class TaskDetailsPage extends StatelessWidget {
             ],
           ),
           SettingTitle(
-            text: 'AUTHOR',
+            text: AppStrings.author,
             items: [
               ListTile(
                 minLeadingWidth: 0,
@@ -52,7 +53,7 @@ class TaskDetailsPage extends StatelessWidget {
             ],
           ),
           SettingTitle(
-            text: 'DATE',
+            text: AppStrings.date,
             items: [
               ListTile(
                 minLeadingWidth: 0,
@@ -63,7 +64,7 @@ class TaskDetailsPage extends StatelessWidget {
             ],
           ),
           SettingTitle(
-            text: 'DESCRIPTION',
+            text: AppStrings.description,
             items: [
               ListTile(
                 minLeadingWidth: 0,
@@ -76,7 +77,7 @@ class TaskDetailsPage extends StatelessWidget {
             ],
           ),
           SettingTitle(
-            text: 'TYPE',
+            text: AppStrings.type,
             items: [
               ListTile(
                 minLeadingWidth: 0,
@@ -88,7 +89,7 @@ class TaskDetailsPage extends StatelessWidget {
             ],
           ),
           SettingTitle(
-            text: 'PROJECT',
+            text: AppStrings.project,
             items: [
               ListTile(
                 minLeadingWidth: 0,
@@ -100,19 +101,19 @@ class TaskDetailsPage extends StatelessWidget {
             ],
           ),
           SettingTitle(
-            text: 'STATE',
+            text: AppStrings.status,
             items: [
               ListTile(
                 minLeadingWidth: 0,
                 tileColor: Colors.white,
                 title: Text(
-                  taskProvider.selectedTask!.state,
+                  taskProvider.selectedTask!.status,
                 ),
               ),
             ],
           ),
           SettingTitle(
-            text: 'RESPONSABLE',
+            text: AppStrings.responsable,
             items: [
               ListTile(
                 minLeadingWidth: 0,
@@ -124,7 +125,7 @@ class TaskDetailsPage extends StatelessWidget {
             ],
           ),
           SettingTitle(
-            text: 'PROGRAMMERS',
+            text: AppStrings.programmers,
             items: [
               ListTile(
                 minLeadingWidth: 0,
@@ -150,7 +151,7 @@ class TaskDetailsPage extends StatelessWidget {
                           ),
                         ],
                       )
-                    : const Text('Not yet assigned'),
+                    : const Text(AppStrings.noYetAssig),
               ),
             ],
           ),

@@ -11,7 +11,7 @@ class Task {
   User responsable;
   User author;
   String project;
-  String state;
+  String status;
   List<User> users;
 
   Task({
@@ -23,7 +23,7 @@ class Task {
     required this.responsable,
     required this.author,
     required this.project,
-    required this.state,
+    required this.status,
     required this.users,
   });
 
@@ -41,7 +41,7 @@ class Task {
       responsable: User.fromJson(responsable),
       author: User.fromJson(author),
       project: json['project'],
-      state: json['state'],
+      status: json['status'],
       users: List.generate(
         usersList.length,
         (index) => User.fromJson(usersList[index]),
@@ -59,7 +59,7 @@ class Task {
       'responsable': jsonEncode(responsable.toJson()),
       'author': jsonEncode(author.toJson()),
       'project': project,
-      'state': state,
+      'status': status,
       'users': jsonEncode(
         List.generate(
           users.length,

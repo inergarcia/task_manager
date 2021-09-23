@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:task_manager/src/design/colors.dart';
+import 'package:task_manager/src/design/dimensions.dart';
 
 // ignore: must_be_immutable
 class CustomInputPass extends StatefulWidget {
@@ -28,10 +29,10 @@ class _CustomInputPassState extends State<CustomInputPass> {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(bottom: 2.5, top: 2.5, left: 20),
-      margin: const EdgeInsets.only(bottom: 20),
+      margin: const EdgeInsets.only(bottom: AppDimensions.marginBottom),
       decoration: BoxDecoration(
         color: AppColors.imputTextBackgroundColor,
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(AppDimensions.borderRadius),
         boxShadow: <BoxShadow>[
           BoxShadow(
             color: Colors.black.withOpacity(0.09),
@@ -44,7 +45,6 @@ class _CustomInputPassState extends State<CustomInputPass> {
         controller: widget.textController,
         cursorColor: AppColors.primaryColor,
         style: const TextStyle(
-          fontWeight: FontWeight.w500,
           color: AppColors.inputFontColor,
         ),
         autocorrect: false,

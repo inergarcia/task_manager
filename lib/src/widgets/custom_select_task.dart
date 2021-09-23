@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'package:task_manager/src/design/colors.dart';
+import 'package:task_manager/src/design/dimensions.dart';
 import 'package:task_manager/src/models/task.dart';
 import 'package:task_manager/src/providers/task.dart';
 
@@ -28,7 +29,7 @@ class _CustomSelectTaskState extends State<CustomSelectTask> {
               bottom: 2.5,
               top: 2.5,
             ),
-            margin: const EdgeInsets.only(bottom: 20),
+            margin: const EdgeInsets.only(bottom: AppDimensions.marginBottom),
             child: Container(
               height: 50,
               padding: const EdgeInsets.only(
@@ -37,7 +38,7 @@ class _CustomSelectTaskState extends State<CustomSelectTask> {
               ),
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(15.0),
+                borderRadius: BorderRadius.circular(AppDimensions.borderRadius),
                 boxShadow: <BoxShadow>[
                   BoxShadow(
                     color: Colors.black.withOpacity(0.09),

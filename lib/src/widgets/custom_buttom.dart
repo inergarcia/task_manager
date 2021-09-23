@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:task_manager/src/design/colors.dart';
+import 'package:task_manager/src/design/dimensions.dart';
 
 class ButtonFill extends StatelessWidget {
   final String text;
@@ -21,7 +22,7 @@ class ButtonFill extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(15),
+      borderRadius: BorderRadius.circular(AppDimensions.borderRadius),
       child: Material(
         color: color,
         child: InkWell(

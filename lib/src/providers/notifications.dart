@@ -6,7 +6,7 @@ class NotificationsProvider with ChangeNotifier {
 
   void init() {
     _flp = FlutterLocalNotificationsPlugin();
-    var android = const AndroidInitializationSettings('@mipmap/ic_launcher');
+    var android = const AndroidInitializationSettings('@mipmap/launcher_icon');
     var iOS = const IOSInitializationSettings();
     var initSetttings = InitializationSettings(android: android, iOS: iOS);
     _flp.initialize(initSetttings);
